@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>UVA Biocomplexity Institute</title>
+    <link>/</link>
+    <description>Recent content on UVA Biocomplexity Institute</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>General Overview of the Project</title>
+      <link>/findings/general-overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/findings/general-overview/</guid>
+      <description>While this page is optional, it probably makes sense to have one weighted at the top (see the front matter at the top of this Rmd file) that gives a general overview of the project. This could be something like the final poster while the other pages highlight more in-depth observations. Here is a general schema of what should be covered throughout your website:
+Main Findings [Here you will describe the results and include important visualizations from your project.</description>
+    </item>
+    
+    <item>
+      <title>Results Section One</title>
+      <link>/findings/results-section-one/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/findings/results-section-one/</guid>
+      <description>/* this chunnk of code centers all of the headings */ h1, h2, h3 { text-align: center; }  Examples Page If you want to add in an image on an Rmd file, use this link here. It ends up being a little tricky, but as long as you have created a folder to insert your images, you can just use some markdown code or html to insert images in the format you want.</description>
+    </item>
+    
+    <item>
+      <title>Results Section Two</title>
+      <link>/findings/results-section-two/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/findings/results-section-two/</guid>
+      <description>[Here you will describe the data discoversy process, the data used, and the methods employed for this single page. Since you already have a Project Overview and Data &amp;amp; Methods tabs, you probably want to keep this first paragraph fairly short and use the rest of the document to walk your readers through your analyses.]
+Main Findings [Here you will describe the results and include important visualizations from your project.</description>
+    </item>
+    
+    <item>
+      <title>Results Section Three</title>
+      <link>/findings/results-section-three/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/findings/results-section-three/</guid>
+      <description>[Here you will describe the data discoversy process, the data used, and the methods employed for this single page. Since you already have a Project Overview and Data &amp;amp; Methods tabs, you probably want to keep this first paragraph fairly short and use the rest of the document to walk your readers through your analyses.]
+Main Findings [Here you will describe the results and include important visualizations from your project.</description>
+    </item>
+    
+    <item>
+      <title>Open Source Software 2020 Summer Project</title>
+      <link>/methods/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/methods/</guid>
+      <description>/* this chunnk of code centers all of the headings */ h1, h2, h3 { text-align: center; }  Data and Methods Example text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in varius purus. Nullam ut sodales ante. Fusee justo nisi, suscipit a lacus et, posuere sagittis ex. Nulla convallis ante elit, at consequat ipsum ultricies ut. Aliquam erat volutpat. nderline. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+    </item>
+    
+    <item>
+      <title>Open Source Software 2020 Summer Project</title>
+      <link>/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/overview/</guid>
+      <description>/* this chunnk of code centers all of the headings */ h1, h2, h3 { text-align: center; }  Project Overview Example text: Current economic indicators and indicators developed by the National Center for Science &amp;amp; Engineering Statistics (NCSES) do not measure the value of goods and services that fall outside of market transactions. Although NCSES does track some types of software development, it is challenging to account for open source software (OSS) outputs because these products are largely being advanced outside of traditional business contexts.</description>
+    </item>
+    
+    <item>
+      <title>Open Source Software 2020 Summer Project</title>
+      <link>/team/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/team/</guid>
+      <description>/* this chunnk of code centers all of the headings */ h1, h2, h3 { text-align: center; }  UVA Data Science for the Public Good The Data Science for the Public Good (DSPG) Young Scholars program is a summer immersive program held at the Biocomplexity Institute’s Social and Decision Analytics division (SDAD). In its seventh year, the program engages students from across the country to work together on projects that address state, federal, and local government challenges around critical social issues relevant in the world today.</description>
+    </item>
+    
+  </channel>
+</rss>
