@@ -11,12 +11,22 @@
     
     
     <item>
+      <title>General Overview of the Project</title>
+      <link>/findings/general-overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/findings/general-overview/</guid>
+      <description>This is a test While this page is optional, it probably makes sense to have one weighted at the top (see the front matter at the top of this Rmd file) that gives a general overview of the project. This could be something like the final poster while the other pages highlight more in-depth observations. Here is a general schema of what should be covered throughout your website:
+Main Findings Recidivism and Grant Search Correctional Education Study Findings: Even small levels of improvement can increase an individual&#39;s ability to function in the community.</description>
+    </item>
+    
+    <item>
       <title>Results Section One</title>
       <link>/findings/results-section-one/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/findings/results-section-one/</guid>
-      <description>/* this chunnk of code centers all of the headings */ h1, h2, h3 { text-align: center; }  Main Findings Dadashazar (2017) identified factors including previous incarceration, family relations, employment and education barriers, housing constraints and substance abuse to be associated with increased recidivism. Hanson (2017) concluded that prior criminal history and substance abuse were among the risk factors for multiple types of recidivism across multiple types of offenders.</description>
+      <description>/* this chunnk of code centers all of the headings */ h1, h2, h3 { text-align: center; }  Examples Page If you want to add in an image on an Rmd file, use this link here. It ends up being a little tricky, but as long as you have created a folder to insert your images, you can just use some markdown code or html to insert images in the format you want.</description>
     </item>
     
     <item>
@@ -25,7 +35,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/findings/results-section-two/</guid>
-      <description>Main Findings Economic Vulnerability may also be affected by health and education accessibility. Those with access to health and education facilities were less likely to be poor and vulnerable (Gil et al., 2014). We measured health and educational access separately in each Virginia County using multiple indicators. The health indicators correspond to hospitals, clinics, counseling centers, and other health facilities that are immediately in aid of a vulnerable population.</description>
+      <description>[Here you will describe the data discoversy process, the data used, and the methods employed for this single page. Since you already have a Project Overview and Data &amp;amp; Methods tabs, you probably want to keep this first paragraph fairly short and use the rest of the document to walk your readers through your analyses.]
+Main Findings [Here you will describe the results and include important visualizations from your project.</description>
     </item>
     
     <item>
@@ -34,34 +45,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/findings/results-section-three/</guid>
-      <description>Main Findings Factor Analysis and Social and Economic Vulnerability Index Page county is a rural county in the Valley region in Virginia. While factor analysis and composite index construction have been done on different scales, we are limited by our data to the county-level. However, other social and economic modeling approaches were applied to county level data and were developed to address shortcomings of predecessor models (Cutter et al., 2003).</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/findings/isochrones/hospitals__virginia_shp/read/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/findings/isochrones/hospitals__virginia_shp/read/</guid>
-      <description>hospitals</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/findings/isochrones/read/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/findings/isochrones/read/</guid>
-      <description>isochrones</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/findings/isochrones/virginiashapefiles/read/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/findings/isochrones/virginiashapefiles/read/</guid>
-      <description>shape files</description>
+      <description>[Here you will describe the data discoversy process, the data used, and the methods employed for this single page. Since you already have a Project Overview and Data &amp;amp; Methods tabs, you probably want to keep this first paragraph fairly short and use the rest of the document to walk your readers through your analyses.]
+Main Findings [Here you will describe the results and include important visualizations from your project.</description>
     </item>
     
   </channel>

@@ -1,11 +1,16 @@
 ---
 title: "Results Section One"
-description: "Recidivism"
+description: "Accessibility Indicators"
+tags: ["R", "geospatial", "app"]
 weight: 2
 draft: false
 output: html_document
 ---
 
+<script src="/rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
+<script src="/rmarkdown-libs/d3/d3.min.js"></script>
+<link href="/rmarkdown-libs/collapsibleTree/collapsibleTree.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/collapsibleTree-binding/collapsibleTree.js"></script>
 
 
 <style type="text/css">
@@ -14,29 +19,28 @@ h1, h2, h3 {
   text-align: center;
 }
 </style>
-<div id="main-findings" class="section level2">
-<h2>Main Findings</h2>
-<p>Dadashazar (2017) identified factors including previous incarceration, family relations, employment and education barriers, housing constraints and substance abuse to be associated with increased recidivism. Hanson (2017) concluded that prior criminal history and substance abuse were among the risk factors for multiple types of recidivism across multiple types of offenders.</p>
-<div id="recidivism" class="section level3">
-<h3>Recidivism</h3>
-<p>Our team initially began looking into recidivism in Page County and the rest of Virginia. However, recidivism and even substance abuse data are scarce. Focusing on the factors of recidivism mentioned by Dadashazar (2017) and Hanson (2017) we used the incarceration and substance abuse data to visualize and compare Page County to other counties in Virginia.</p>
-<p>The racing incarceration rates below show that rates in Page County are relatively high compared to neighboring counties and even the state average.</p>
-<center>
-<img src="/images/race3.gif" />
-</center>
-<p>Taking a closer look at the comparison of Page County incarceration rates to the average rates in Virginia, we can see that a large gap has developed since the year 2000..</p>
-<p><img src="/findings/results-section-one_files/figure-html/plot-1.png" width="672" /></p>
-While the substance abuse arrest data may be indicative of many factors including law and law enforcement practices, the rural areas of Virginia can be seen to have higher substance abuse arrest rates. This may be indicative of growing substance abuse problems in rural areas which is supported by other studies in the literature (Pullen and Oser, 2014; Schoeneberger et al., 2006).
-</center>
-<center>
-<img src="/images/substance_arrests.png" alt="Page" width="700" height="350" />
-</center>
+<div id="examples-page" class="section level3">
+<h3>Examples Page</h3>
+<p>If you want to add in an image on an Rmd file, use this <a href="https://lcolladotor.github.io/2018/03/07/blogdown-insert-image-addin/">link here</a>. It ends up being a little tricky, but as long as you have created a folder to insert your images, you can just use some markdown code or html to insert images in the format you want.</p>
+</div>
+<div id="centering-images" class="section level3">
+<h3>Centering images</h3>
+<div class="figure">
+<img src="/findings/results-section-one_files/hugo.png" style="width:20%; display: block; margin-left: auto; margin-right: auto;" />
+
 </div>
 </div>
-<div id="references" class="section level2">
-<h2>References:</h2>
-<p>Dadashazar, N. (2017). Offender recidivism: A quantitative study of motivational risk factors and counseling.</p>
-<p>Hanson, R. K. (2009). The psychological assessment of risk for crime and violence. Canadian Psychology/Psychologie canadienne, 50(3), 172.</p>
-<p>Håkansson, A., Berglund, M. Risk factors for criminal recidivism – a prospective follow-up study in prisoners with substance abuse. BMC Psychiatry 12, 111 (2012). <a href="https://doi.org/10.1186/1471-244X-12-111" class="uri">https://doi.org/10.1186/1471-244X-12-111</a> Pullen, E., &amp; Oser, C. (2014). Barriers to substance abuse treatment in rural and urban communities: counselor perspectives. Substance use &amp; misuse, 49(7), 891–901. <a href="https://doi.org/10.3109/10826084.2014.891615" class="uri">https://doi.org/10.3109/10826084.2014.891615</a></p>
-<p>Schoeneberger, M. L., Leukefeld, C. G., Hiller, M. L., &amp; Godlaski, T. (2006). Substance abuse among rural and very rural drug users at treatment entry. The American Journal of Drug and Alcohol Abuse, 32(1), 87-110.</p>
+<div id="placing-images-side-by-side" class="section level3">
+<h3>Placing images side-by-side</h3>
+<p><img src="/findings/results-section-one_files/hugo.png" width="150"/> <img src="/findings/results-section-one_files/rmarkdown.png" width="150"/> <img src="/findings/results-section-one_files/min_night.png" width="175"/> <img src="/findings/results-section-one_files/netlify.png" width="175"/></p>
+</div>
+<div id="embedding-shiny-apps" class="section level3">
+<h3>Embedding Shiny Apps</h3>
+<iframe src="https://uva-sdad.shinyapps.io/gates-dashboard/?showcase=0" width="672" height="400px">
+</iframe>
+</div>
+<div id="embedding-r-code" class="section level3">
+<h3>Embedding R code</h3>
+<div id="htmlwidget-1" style="width:672px;height:480px;" class="collapsibleTree html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"data":{"name":"OSS","children":[{"name":"Academic","children":[{"name":"github","children":[{"name":"contributor","children":[{"name":"login"},{"name":"email"},{"name":"organization"},{"name":"company"}]},{"name":"commits","children":[{"name":"commits"}]}]},{"name":"orcid","children":[{"name":"orcid","children":[{"name":"orcid"}]}]},{"name":"hipolabs","children":[{"name":"hipolabs","children":[{"name":"institution"},{"name":"country"},{"name":"domains"}]}]},{"name":"NCSES","children":[{"name":"Survey of Federal Science and Engineering Support 2018","children":[{"name":"institution"},{"name":"rank"},{"name":"all federal obligations"},{"name":"R&D"}]},{"name":"Higher Education Research and Development Survey 2018","children":[{"name":"institution"},{"name":"rank"},{"name":"R&D expenditure"},{"name":"federal gov fund"},{"name":"state local gov fund"},{"name":"institution funds"}]}]}]},{"name":"Business","children":[{"name":"github","children":[{"name":"contributor","children":[{"name":"contributor"}]},{"name":"commits","children":[{"name":"commits"}]}]},{"name":"Enterprise-Driven OSS","children":[{"name":"cohort project details","children":[{"name":"cohort project details"}]},{"name":"enterprise project","children":[{"name":"enterprise project"}]}]},{"name":"forbes","children":[{"name":"Fortune's Annual Ranking of Companies 2018 (US 1000)","children":[{"name":"Fortune's Annual Ranking of Companies 2018 (US 1000)"}]},{"name":"Fortune's Annual Ranking of Companies 2019 (US 1000)","children":[{"name":"Fortune's Annual Ranking of Companies 2019 (US 1000)"}]},{"name":"Fortune's Annual Ranking of Companies 2020 (Global 2000)","children":[{"name":"Fortune's Annual Ranking of Companies 2020 (Global 2000)"}]}]},{"name":"Global Legal Entity Identifier Foundation (GLEIF)","children":[{"name":"GLEIF","children":[{"name":"country"}]}]},{"name":"Data Hub","children":[{"name":"email domains","children":[{"name":"domain"},{"name":"type"},{"name":"organization"}]}]},{"name":"2020 US Business Database","children":[{"name":"2020 US Business Database","children":[{"name":"2020 US Business Database"}]}]}]},{"name":"Government","children":[{"name":"github","children":[{"name":"commits","children":[{"name":"commits"}]}]},{"name":"System for Award Management (SAM)","children":[{"name":"System for Award Management (SAM)","children":[{"name":"parent2"},{"name":"fhorgtype"},{"name":"fhorgname"}]}]},{"name":"us gov","children":[{"name":"Federally Funded R&D Centers","children":[{"name":"ffrdc name"},{"name":"agency"}]},{"name":"A-Z Index","children":[{"name":"agency"},{"name":"gov branch"},{"name":"parent agency"},{"name":"parent agency parent"}]}]},{"name":"code gov","children":[{"name":"code gov","children":[{"name":"code gov"}]}]},{"name":"crowdsourced","children":[{"name":"crowdsourced","children":[{"name":"crowdsourced"}]}]}]},{"name":"International","children":[{"name":"github","children":[{"name":"contributor","children":[{"name":"contributor"}]},{"name":"commits","children":[{"name":"commits"}]}]},{"name":"mindmap","children":[{"name":"mindmap","children":[{"name":"mindmap"}]}]}]}]},"options":{"hierarchy":["Sector","DataSource","SubData","Variables"],"input":null,"attribute":"leafCount","linkLength":null,"fontSize":10,"tooltip":false,"collapsed":true,"zoomable":true,"margin":{"top":20,"bottom":20,"left":40,"right":305},"fill":"#E57200"}},"evals":[],"jsHooks":[]}</script>
 </div>

@@ -1,0 +1,58 @@
+---
+title: "General Overview of the Project"
+description: "Project description here"
+tags: ["R", "geospatial"]
+weight: 1
+draft: false
+output: html_document
+---
+
+This is a test
+While this page is *optional*, it probably makes sense to have one weighted at the top (see the front matter at the top of this Rmd file) that gives a general overview of the project. This could be something like the final poster while the other pages highlight more in-depth observations. Here is a general schema of what should be covered throughout your website: 
+
+## Main Findings 
+
+### Recidivism and Grant Search
+
+####Correctional Education Study Findings:
+Even small levels of improvement can increase an individual's ability to function in the community.
+Page County has low infrastructure which is a barrier to increasing education via:
+remote work, education and mental health care
+
+<center>
+![Page](/download/Senza titolo.png){width=350px height=200px}
+</center>
+
+
+####Grants Awarded to Page County:
+
+Rural Health Opioid Program
+
+End: Sep 29,2020
+
+$477k
+
+Aims to enhance health care delivery in the Delta Region through intensive technical assistance to providers.
+Page Alliance For Community Acton Substance Abuse Prevention Coalition
+
+
+Ends: Sep 29, 2020
+
+$250K
+
+Aims to increase the capacity of community coalitions to reduce substance abuse, and over time, to reduce substance abuse among adults through strengthening collaboration among communities, public and private entities.
+
+</center>
+
+###Spatial Variables
+
+###Composite Vulnerability Score
+
+## Conclusion and Policy Implications 
+
+[Here you could highlight the main takeaways and the potential policy implications of your findings.] 
+
+## References 
+
+[List your references here using APA format (or at least standardize all of the references using the same format).]
+

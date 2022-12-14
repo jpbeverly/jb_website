@@ -19,7 +19,7 @@ library(jpeg)
 
 ### 2020 Page County Summer Project {style=text-align:center}
 
-Our project goal was to identify community capital in Page County, find ways to enhance that community capital and identify the level of vulnerability compared to other counties in Virginia. Our team is made up of talented individuals with a broad range of skills and experience.
+##### [Optional: General description of your project, team members, and how they complement each other.] {style=text-align:center}
 
 ### DSPG Team Members {style=text-align:center}
 
@@ -36,7 +36,7 @@ Our project goal was to identify community capital in Page County, find ways to 
 
 [Laura Pranteddu, Intern (Master Student at University of Trento, Data Science)](https://github.com/lp9kh) | 
 
-[Afrina Tabassum, Intern (Ph.D. Student at Virginia Tech, Computer Science)](https://github.com/AfrinaVT)
+[Afrina Tabassum, Intern (Ph.D. Student at Virginia Tech, Computer Science)](https://github.com/sp3sd)
 
 </center>
 

@@ -5,60 +5,33 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-#blogdown::serve_site()
-#blogdown::stop_server()
 ```
-
 
 ### 2020 Page County Summer Project {style=text-align:center}
 
-Page County suffers from some of the highest rates of recidivism in the state of Virginia and other intergenerational poverty issues. Page County would like to identify factors and determine ways to increase relative and absolute economic mobility for the vulnerable population in the county. 
+Page County suffers from some of the highest rates of recidivism in the state of Virginia and other intergenerational poverty issues. Page County would like to identify factors and and determine ways to increase relative and absolute economic mobility for the vulnerable population in the county. 
 
 
-![Virginia](/images/PageOverview.png){style="width:75%; style = display: block; margin-left: auto; margin-right: auto;"}
+![Virginia](/images/PageCounty.png){style="width:75%; style = display: block; margin-left: auto; margin-right: auto;"}
+
+
+While Virginia has the lowest recidivism rate in the U.S., Page County has the highest recidivism rate in the state.
+Derived from the Latin recidivus meaning "recurring", recidivism means "a falling back" usually implying into bad habits.
+
+
+<center>
+![Page](/download/recidivism.png){width=350px height=200px}
+</center>
 
 
 ###Project Goals 
 
 
-Our project goal was to identify community capital in Page County, find ways to enhance that community capital, and identify the level of vulnerability compared to other counties in Virginia.
+1. $\textbf{Identify}$ and $\textbf{Compare}$ community capital available in Page and surrounding counties.
 
-### Our Approach
+2. $\textbf{Identify}$ ways to enhance the community capital in Page County.
 
-Our research team used the Community Capital (Emery & Flora, 2006) and Ecological (Bronfenbrenner, 1979) frameworks to combine publicly available economic and social data related to economic vulnerability. The community capital framework focuses on seven types of capital in order to analyze community economic development. The seven types include:
-
-1. Natural capital: Community environment (rivers, lakes, forests, water, etc.)
-2. Cultural capital: Cultural and Ethnic Factors (festivals, influences, traditions, etc.)
-3. Human capital: Residents (education, health, skills, etc.)
-4. Social capital: Community Connections (people and organization connections)
-5. Political capital: Polices and Government (law, government officials, enforcement, etc.)
-6. Financial capital: Financial Resources (investment, business development, entrepreneurship, etc.)
-7. Built capital: Infrastructure (telecommunications, high ways, powerplants, businesses, etc.)
-
-The six types of capital in Figure 1 represent the categories most related to our project goals in Page County. 
-
-<center>
-![Approach](/images/capital.png){width=300px height=400px}
-</center>
-
-
-
-We then connected the community capital framework for analyzing community development to the Ecological Framework. The Ecological Framework postulates that some people are at higher risk or more vulnerable because of multiple factors at different levels (Brofenbrenner, 1979). 
-The four main levels outlined in the framework include individual, relationships, community, and societal. Factors at each level may affect the level of an individual’s vulnerability .
- 
- In figure 2, we linked factors of Economic Vulnerability by color to the four main levels of the ecological framework. 
-
-<center>
-![Approach](/images/vulnerable.png){width=500px height=400px}
-</center>
-
-The data discovered from these frameworks were used to construct spatial measures of accessibility to education and health centers as well as a composite index of vulnerability at the county level. The composite index includes demographic, economic, social and spatial factors of vulnerability. By ranking counties in vulnerability, stakeholders can visualize how Page County measures up against other counties in the state and use the information to apply and acquire grants and programs to help the vulnerable population in Page County. 
-
-References:
-
-Bronfenbrenner, U. (1979). The ecology of human development. Harvard university press.
-
-Emery, M., & Flora, C. (2006). Spiraling-up: Mapping community transformation with community capitals framework. Community development, 37(1), 19-35.
+3. $\textbf{Create}$ a vulnerability score to identify factors and areas vulnerable to recidivism and intergeneration poverty issues. 
 
 
 

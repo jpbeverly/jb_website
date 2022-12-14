@@ -209,29 +209,45 @@ $(document).ready(function(){
 <div id="page-county-summer-project" class="section level3" style="text-align:center">
 <h3>2020 Page County Summer Project</h3>
 </div>
+<div id="our-approach" class="section level2">
+<h2>Our Approach</h2>
+<p>We pulled from the Community Capital and Ecological frameworks to inform us for potential data sources.</p>
+<p>The Comunity Capital Framework is an approach to analyze communities and economic mobility. The framework includes seven types of capital: Built Capital, Human Capital, Social Capital, Financial Capital, Political Capital, Cultural Capital, and Natural Capital.</p>
+<p>To better understand the community in Page and surrounding counties, we focused on the first six types of capital.</p>
+<center>
+<img src="../images/capital.png" title="fig:" alt="Approach" width="300" height="400" />
+</center>
+<p>In addition, we approached the research questions from an Ecological Framework as well. In the Ecological Framework, some people are at higher risk or more vulnerable because of multiple factors at different levels. The four main levels include: individual, relationships, community and societal.</p>
+<center>
+<img src="../images/vulnerable.png" title="fig:" alt="Approach" width="500" height="400" />
+</center>
+<p>We used these two frameworks to help us find data to identify and compare community capital in Page and surrounding counties.</p>
+</div>
 <div id="data-sources" class="section level2">
 <h2>Data Sources</h2>
-<p>Gill et al (2016) note that increasing returns to assets held by the rural poor such as health and education fosters a pattern of growth and structural change in employment. Creating sustained growth in employment and labor income has been identified as a major driver of economic mobility (Inchauste et al., 2014). Increasing education, health, and employment have also been associated with decreasing incarceration and recidivism rates (Dadashazar, 2017).</p>
-<p>Therefore, to help reduce vulnerability in Page county we first began by accessing the health and education accessibility in Page County. We identified hospitals, clinics, counseling centers and education centers in the Page County region. The location data were taken from the VirginiaWorks website run by the Virginia Employment Commission (VEC) which is an agency of the Commonwealth of Virginia. VirginiaWorks is a collaboration of eight agencies on workforce needs in Virginia. VirginiaWorks aims to connect job seekers with employers in Virginia and therefore maintains a public database of employers for the whole state.</p>
 <center>
-<img src="../images/VEC.png" alt="Data" width="350" height="200" /> <img src="../images/careerWorks.png" alt="Data" width="300" height="250" />
+<img src="../images/data.png" title="fig:" alt="Data" width="500" height="250" />
 </center>
-<p>Unfortunately, recidivism data for levels below the state level are difficult to find given the sensitive nature of recidivism. Therefore, to identify areas potentially vulnerable to recidivism we pulled county-level data from the Virginia State Police Arrest records and incarceration rate data from the Vera Institute of Justice. We focused primarily on substance abuse arrests to include substance abuse as a factor in the analysis. We also performed a grant and program search to provide a list of potential resources to help the previously incarcerated population in Page County.</p>
-<center>
-<img src="../images/police.jpg" alt="Data" width="150" height="150" /> <img src="../images/Vera_Ver_Red.png" alt="Data" width="250" height="125" />
-</center>
-<p>To further assess accessibility to health and education, we used (VEC) location data to create accessibility measures. We calculate the distances from each population-weighted county centroid to each education and health facility in a certain radius using OpenStreetMap data. This results in health and educational accessibility measures that provide information on the relative access to programs, health care and education in Virginia. These variables are also used in constructing the final vulnerability index explained below. We additionally mapped travel time isochrones to show relative accessibility to education and health centers as well.</p>
-<center>
-<img src="../images/OSM.jpg" alt="Data" width="300" height="150" />
-</center>
-<p>Lastly, we constructed a composite vulnerability index using variables obtained from the spatial measures and the American Community Survey (ACS). The ACS is the largest survey administered by the U.S. Census Bureau and tracks many of the same variables as those tracked by the Census of the United States. We used factor analysis to create the composite index of vulnerability. The idea behind factor analysis is to explain unobservable factors affecting economic vulnerability (such as economic determinants, social determinants, and access) with variables that can be measured. Variables in the analysis included demographic, socioeconomic, and access indices.</p>
-<center>
-<img src="../images/ACS.jpg" alt="Data" width="250" height="150" />
-</center>
-<p>References:</p>
-<p>Dadashazar, N. (2017). Offender recidivism: A quantitative study of motivational risk factors and counseling.</p>
-<p>Gill, I. S., Revenga, A., &amp; Zeballos, C. (2016). Grow, invest, insure: A game plan to end extreme poverty by 2030. The World Bank.</p>
-<p>Inchauste, G., Azevedo, J. P., Essama-Nssah, B., Olivieri, S., Nguyen, T. V., Saavedra-Chanduvi, J., &amp; Winkler, H. (2014). Understanding changes in poverty. The World Bank.</p>
+</div>
+<div id="methodology" class="section level2">
+<h2>Methodology</h2>
+<p>###Spatial Variables</p>
+<p>The regional accessibility indicator is created by examining the education and health facilities within a specified radius.</p>
+<p>In the health care data, we include hospitals, clinics, counseling centers, and other facilities that are immediately in aid of a vulnerable population. The education data includes colleges, universities, career training facilities, and other sources for continued education after high school.</p>
+<p>To calculate a regional accessibility indicator at a county level, a center location must be determined. To find the center for each Virginia county, the geometric center weighted by population density is used.</p>
+<p>Centers of Population for the 2010 Census.
+Retrieved from <a href="https://www.census.gov/geographies/reference-files/2010/geo/2010-centers-population.html">here</a>.</p>
+<p>For each Virginia county, only facilities within a specified radius would contribute to each county indicator.</p>
+<p>Regional Resource Accessibility = <span class="math inline">\(\frac{\sum_{}^{} \frac{1}{distance}}{population}\)</span></p>
+<p>The summation of the inverse distances between each education or health facility to the county population center was used to weight the closer resources higher than those further away.</p>
+<p>Lastly, the summation for each county is weighted by its county population to account for differences in rural and urban areas.
+The results are regional resource accessibility indicators for education and health facilities on the county level.</p>
+<p>###Factor Analysis</p>
+<p>###Composite Vulnerability Score Construction
+Our model uses a varimax rotation with the maximum likelihood solution method. Using the correlations with the unobserved factors, we use the following formula to construct the composite vulnerability scores.
+<span class="math display">\[\mathcal{F} = (X^s\centerdot F^T) \centerdot \textbf{w}\]</span>
+where <span class="math inline">\(\mathcal{F}\)</span> is the Composite Score,
+<span class="math inline">\(X^s\)</span> is the Standardized design matrix, <span class="math inline">\(F^T\)</span> is the Matrix of Factor Scores and <span class="math inline">\(\textbf{w}\)</span> is the Proportion of Variance Explained.</p>
 </div>
 </div>
 

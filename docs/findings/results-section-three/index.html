@@ -119,8 +119,8 @@ $(document).ready(function(){
       <meta name="twitter:card" content="summary">
       <meta name="twitter:image" content="/favicon/uva-dspg-logo.jpg" >
       
-    <meta property="description" content="Composite Vulnerability Index">
-    <meta property="og:description" content="Composite Vulnerability Index">
+    <meta property="description" content="Project description here">
+    <meta property="og:description" content="Project description here">
     
     <meta name="twitter:creator" content="">
     <meta name="twitter:site" content="">
@@ -195,9 +195,17 @@ $(document).ready(function(){
 
     <h4><a href="../../findings/results-section-three/">Results Section Three</a></h4>
     
-    <h5>Composite Vulnerability Index</h5>
+    <h5>Project description here</h5>
 
     
+    
+    <a href="../../tags/r">
+        <kbd class="item-tag"> R </kbd>
+    </a>
+    
+    <a href="../../tags/networks">
+        <kbd class="item-tag"> networks </kbd>
+    </a>
     
 
 </div>
@@ -206,32 +214,18 @@ $(document).ready(function(){
     <br> <div class="text-justify">
 
 
-<div id="main-findings" class="section level2">
-<h2>Main Findings</h2>
-<div id="factor-analysis-and-social-and-economic-vulnerability-index" class="section level3">
-<h3>Factor Analysis and Social and Economic Vulnerability Index</h3>
-<p>Page county is a rural county in the Valley region in Virginia. While factor analysis and composite index construction have been done on different scales, we are limited by our data to the county-level. However, other social and economic modeling approaches were applied to county level data and were developed to address shortcomings of predecessor models (Cutter et al., 2003). In the factor analysis framework, the composite variable is essentially a weighted average of the underlying access and demographic variables. Factor analysis groups together individual indicators that are collinear to form a composite indicator that captures as much of the information common to individual indicators as possible (Mulaik, 2009). In essence, it creates unobservable factors from observable data.</p>
-<p>The social and economic vulnerability index (SEVI) is constructed using county level data on poverty rate, ethnicity, education level, unemployment, SNAP benefits, health insurance, age, marital status and the health and education accessibility measures. All of these factors can affect the level of vulnerability in a county. A few selected variables are graphed below.</p>
-<iframe src="https://tabassum.shinyapps.io/Page_Variables_Shiny/?showcase=0" width="672" height="610px">
-</iframe>
-<p>We first standardized all variables to a common scale before applying the factor analysis. The three factors with the highest loadings were retained in constructing the final index. These factors had approximate 24%, 21%, and 12.2% of the overall variation respectively, and cumulatively 57% of the overall variation. The square of the factor loadings represents the proportion of the total unit variance of the indicator that is explained by the factor. Therefore, we take the square of the factor loadings as our weight when constructing the composite.</p>
-<p>Our model uses a varimax rotation with the maximum likelihood solution method. Using the correlations with the unobserved factors, we use the following formula to construct the composite vulnerability scores.</p>
-<p><span class="math display">\[\mathcal{F} = (X^s\centerdot F^T) \centerdot \textbf{w}\]</span></p>
-<p>where <span class="math inline">\(\mathcal{F}\)</span> is the Composite Score, <span class="math inline">\(X^s\)</span> is the Standardized design matrix, <span class="math inline">\(F^T\)</span> is the Matrix of Factor Scores and <span class="math inline">\(\textbf{w}\)</span> is the Proportion of Variance Explained.</p>
-<p>The SEVI is shown in the figure below where darker colors represent more vulnerable populations. The map shows that across Virginia, there are important differences in social and economic vulnerability. Page County especially stands out for its contrast in social and economic vulnerability to the rest of the Northern Virginia Region. While Nova ranks low in vulnerability compared to the rest of the state, the rural regions and Page County specifically rank medium high to high in vulnerability.</p>
+<p>[Here you will describe the data discoversy process, the data used, and the methods employed for this single page. Since you already have a Project Overview and Data &amp; Methods tabs, you probably want to keep this first paragraph fairly short and use the rest of the document to walk your readers through your analyses.]</p>
+<div id="main-findings" class="section level3">
+<h3>Main Findings</h3>
+<p>[Here you will describe the results and include important visualizations from your project.]</p>
 </div>
 <div id="conclusion-and-policy-implications" class="section level3">
 <h3>Conclusion and Policy Implications</h3>
-<p>While he SEVI is only one measure in assessing areas that may be in need of targeted assistance, the data displayed from the SEVI as well as the other measures discussed provide evidence that Page County is an outlier in its region of the state. These results could be used by Page County for grant and program applications to better serve its residents for the future. Increased funding and program implementation would mitigate the low accessibility to education and healthcare which fosters growth in employment, income and economic mobility. For Page county, increasing returns in these areas could then lead to decreased social and economic vulnerability.</p>
-<center>
-<img src="../../findings/spatialMaps/composite.png" alt="Page" width="600" height="450" />
-</center>
+<p>[Here you could highlight the main takeaways and the potential policy implications of your findings.]</p>
 </div>
 <div id="references" class="section level3">
 <h3>References</h3>
-<p>Cutter, S. L., Boruff, B. J., &amp; Shirley, W. L. (2003). Social vulnerability to environmental hazards. Social science quarterly, 84(2), 242-261.</p>
-<p>Mulaik, S. A. (2009). Foundations of factor analysis. CRC press.</p>
-</div>
+<p>[List your references here using APA format (or at least standardize all of the references using the same format).]</p>
 </div>
 </div>
 

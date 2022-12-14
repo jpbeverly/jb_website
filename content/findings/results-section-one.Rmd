@@ -1,6 +1,7 @@
 ---
 title: "Results Section One"
-description: "Recidivism"
+description: "Accessibility Indicators"
+tags: ["R", "geospatial", "app"]
 weight: 2
 draft: false
 output: html_document
@@ -13,80 +14,125 @@ h1, h2, h3 {
 }
 ```
 
-## Main Findings 
+### Examples Page
 
-Dadashazar (2017) identified factors including previous incarceration, family relations, employment and education barriers, housing constraints and substance abuse to be associated with increased recidivism. 
-Hanson (2017) concluded that prior criminal history and substance abuse were among the risk factors for multiple types of recidivism across multiple types of offenders.
+If you want to add in an image on an Rmd file, use this [link here](https://lcolladotor.github.io/2018/03/07/blogdown-insert-image-addin/). It ends up being a little tricky, but as long as you have created a folder to insert your images, you can just use some markdown code or html to insert images in the format you want. 
 
-###Recidivism
-Our team initially began looking into recidivism in Page County and the rest of Virginia. However, recidivism and even substance abuse data are scarce. Focusing on the factors of recidivism mentioned by Dadashazar (2017) and Hanson (2017) we used the incarceration and substance abuse data to visualize and compare Page County to other counties in Virginia. 
+### Centering images  
 
-The racing incarceration rates below show that rates in Page County are relatively high compared to neighboring counties and even the state average. 
+![](/findings/results-section-one_files/hugo.png){style="width:20%; display: block; margin-left: auto; margin-right: auto;"}
 
-<center>
+### Placing images side-by-side
 
-![](/images/race3.gif)
-</center>
+<img src="/findings/results-section-one_files/hugo.png" width="150"/> <img src="/findings/results-section-one_files/rmarkdown.png" width="150"/> <img src="/findings/results-section-one_files/min_night.png" width="175"/> <img src="/findings/results-section-one_files/netlify.png" width="175"/>
 
-Taking a closer look at the comparison of Page County incarceration rates to the average rates in Virginia, we can see that a large gap has developed since the year 2000..
+### Embedding Shiny Apps
 
-```{r plot, echo=FALSE, warning = FALSE, message = FALSE}
-library(ggplot2)
-library(readxl)
-#install.packages("magrittr")
-library(magrittr)
-#install.packages("dplyr")
-#library(dplyr)
-library(dplyr)
-
-#Load Data
-data <- read_excel("VA_Incarceration_Rates.xlsx")
-
-#Select Columns
-data2 <- data %>% select(yfips, year,county_name,total_prison_pop_rate)
-
-#Calc Va Medians
-med <- data2 %>% group_by(year) %>% summarise(total_prison_pop_rate=median(total_prison_pop_rate, na.rm = TRUE))
-med$county_name <- "VA Median"
-med$yfips <- 51
-
-#merge medians with county data
-data3 <- rbind(data2,med)
-
-#Drop Nas
-page_compare <- subset(data3, year>=1983 & year <= 2013 & county_name %in% c("Greene County", "Rappahanock County", "Warren County", "VA Median", "Page County", "Rockingham County", "Madison County", "Shenandoah County"))
-
-## Line Graph
-compare <- subset(page_compare, county_name%in%c("Page County","VA Median"))
-
-p<-ggplot(compare, aes(x=year, y=total_prison_pop_rate, group=county_name)) +
-  geom_line(aes(color=county_name))+
-  geom_point(aes(color=county_name)) +theme_bw()+
-  ggtitle("Prison Population Rates in Page County") + labs(y="Prison Population Rate")+
-  scale_color_discrete("Comparison")
-p
+```{r, echo=FALSE, fig.fullwidth=TRUE}
+knitr::include_app('https://uva-sdad.shinyapps.io/gates-dashboard/')
 ```
 
+### Embedding R code
 
+```{r, warning=FALSE, message=FALSE, echo=FALSE}
+library(collapsibleTree)
+library(tidyverse)
+OSS <- data.frame(
+    Sector = c(
+        "Academic", "Academic","Academic", "Academic", "Academic", "Academic","Academic","Academic","Academic","Academic","Academic","Academic",
+        "Academic","Academic","Academic","Academic","Academic","Academic","Academic",
+        
+        "Business","Business","Business","Business","Business", "Business", "Business", 
+        "Business", "Business", "Business","Business","Business", "Business",
+        
+        "Government", "Government","Government", "Government","Government","Government",
+        "Government", "Government", "Government","Government", "Government", "Government",
+        
+        "International","International","International"
+    ),
+    DataSource = c(
+      #academic
+        "github","github", "github","github","github",
+        "orcid", 
+        "hipolabs", "hipolabs","hipolabs",
+        "NCSES","NCSES", "NCSES", "NCSES","NCSES", "NCSES", "NCSES","NCSES", "NCSES","NCSES",
+        
+      #business
+      "github","github", 
+      "Enterprise-Driven OSS", "Enterprise-Driven OSS",  
+      "forbes",  "forbes", "forbes", 
+      "Global Legal Entity Identifier Foundation (GLEIF)", 
+      "Data Hub", "Data Hub", "Data Hub", 
+      "2020 US Business Database",
+      
+    #gov  
+        "github","github", "System for Award Management (SAM)", "System for Award Management (SAM)",
+    "System for Award Management (SAM)","us gov","us gov","us gov","us gov","us gov","us gov", "code gov", "crowdsourced",
+     
+     #international
+       "github","github", "mindmap"
+    ),
+    SubData = c(
+      #academic
+        "contributor","contributor","contributor","contributor","commits", 
+        "orcid", 
+        "hipolabs", "hipolabs","hipolabs",
+        "Survey of Federal Science and Engineering Support 2018", 
+        "Survey of Federal Science and Engineering Support 2018", "Survey of Federal Science and Engineering Support 2018", 
+        "Survey of Federal Science and Engineering Support 2018", "Higher Education Research and Development Survey 2018", 
+        "Higher Education Research and Development Survey 2018", "Higher Education Research and Development Survey 2018", 
+        "Higher Education Research and Development Survey 2018", "Higher Education Research and Development Survey 2018", 
+        "Higher Education Research and Development Survey 2018", 
+        
+      #business
+        "contributor", "commits", 
+      "cohort project details", "enterprise project",
+      "Fortune's Annual Ranking of Companies 2018 (US 1000)", 
+      "Fortune's Annual Ranking of Companies 2019 (US 1000)", 
+      "Fortune's Annual Ranking of Companies 2020 (Global 2000)", 
+      "GLEIF", 
+      "email domains",  "email domains", "email domains", 
+      "2020 US Business Database",
+        
+      #gov
+        "contributor", "commits", 
+        "System for Award Management (SAM)","System for Award Management (SAM)",
+      "System for Award Management (SAM)","Federally Funded R&D Centers", "Federally Funded R&D Centers", 
+        "A-Z Index","A-Z Index", "A-Z Index","A-Z Index",
+        "code gov", "crowdsourced", 
+    
+      #international    
+        "contributor", "commits", "mindmap"
+    ),
+    Variables = c(
+        "login", "email","organization","company","commits",
+        "orcid", 
+        "institution",
+        "country",
+        "domains",
+        "institution", "rank","all federal obligations" , "R&D", "institution", "rank", 
+        "R&D expenditure", "federal gov fund", "state local gov fund", "institution funds",
+        
+        "contributor", "commits", 
+        "cohort project details", "enterprise project", 
+        "Fortune's Annual Ranking of Companies 2018 (US 1000)", "Fortune's Annual Ranking of Companies 2019 (US 1000)", "Fortune's Annual Ranking of Companies 2020 (Global 2000)", 
+        "country", 
+        "domain", "type", "organization", "2020 US Business Database",
+        
+        "contributor", "commits",  "parent","fhorgtype", "fhorgname", "ffrdc name", "agency", "agency", "gov branch", "parent agency", "parent agency parent", "code gov", "crowdsourced", 
+        
+        "contributor", "commits", "mindmap"
+    )
+)
 
-While the substance abuse arrest data may be indicative of many factors including law and law enforcement practices, the rural areas of Virginia can be seen to have higher substance abuse arrest rates. This may be indicative of growing substance abuse problems in rural areas which is supported by other studies in the literature (Pullen and Oser, 2014; Schoeneberger et al., 2006).
-</center>
-<center>
-![Page](/images/substance_arrests.png){width=700px height=350px}
-</center>
+# Collapsible Tree
+                                    
+collapsibleTree(OSS, 
+                c("Sector", "DataSource", "SubData", "Variables"), 
+                collapsed = T,
+                fill ="#E57200"
+)
 
-
-##References:
-Dadashazar, N. (2017). Offender recidivism: A quantitative study of motivational risk factors and counseling.
-
-Hanson, R. K. (2009). The psychological assessment of risk for crime and violence. Canadian Psychology/Psychologie canadienne, 50(3), 172.
-
-Håkansson, A., Berglund, M. Risk factors for criminal recidivism – a prospective follow-up study in prisoners with substance abuse. BMC Psychiatry 12, 111 (2012). https://doi.org/10.1186/1471-244X-12-111
-Pullen, E., & Oser, C. (2014). Barriers to substance abuse treatment in rural and urban communities: counselor perspectives. Substance use & misuse, 49(7), 891–901. https://doi.org/10.3109/10826084.2014.891615
-
-Schoeneberger, M. L., Leukefeld, C. G., Hiller, M. L., & Godlaski, T. (2006). Substance abuse among rural and very rural drug users at treatment entry. The American Journal of Drug and Alcohol Abuse, 32(1), 87-110.
-
-
-
+```
 
 
