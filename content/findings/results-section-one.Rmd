@@ -18,7 +18,7 @@ h1, h2, h3 {
 Dadashazar (2017) identified factors including previous incarceration, family relations, employment and education barriers, housing constraints and substance abuse to be associated with increased recidivism. 
 Hanson (2017) concluded that prior criminal history and substance abuse were among the risk factors for multiple types of recidivism across multiple types of offenders.
 
-###Recidivism
+### Recidivism
 Our team initially began looking into recidivism in Page County and the rest of Virginia. However, recidivism and even substance abuse data are scarce. Focusing on the factors of recidivism mentioned by Dadashazar (2017) and Hanson (2017) we used the incarceration and substance abuse data to visualize and compare Page County to other counties in Virginia. 
 
 The racing incarceration rates below show that rates in Page County are relatively high compared to neighboring counties and even the state average. 
@@ -69,7 +69,7 @@ While the substance abuse arrest data may be indicative of many factors includin
 </center>
 
 
-##References:
+## References:
 Dadashazar, N. (2017). Offender recidivism: A quantitative study of motivational risk factors and counseling.
 
 Hanson, R. K. (2009). The psychological assessment of risk for crime and violence. Canadian Psychology/Psychologie canadienne, 50(3), 172.
