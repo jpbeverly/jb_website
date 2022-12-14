@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>UVA Data Science for the Public Good Program</title>
+        <link rel="canonical" href="../team2/">
+        <style>
+
+    html body {
+        font-family: 'Oxygen', sans-serif;
+        background-color: #FFFFFF;
+    }
+
+    :root {
+        --accent: #232D4B;
+        --border-width:  0 ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/ascetic.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="../css/main.css">
+
+
+
+
+ 
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/bash.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>
+    
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+
+
+<script>
+$(document).ready(function(){
+    
+  var input = $('#night-mode-toggle');
+  var container = $('#bigbody');
+  var stat = $('#button-status');
+  
+  container.toggleClass(localStorage.toggled);
+  stat.bootstrapToggle(localStorage.button).change();
+  
+  input.on('click', function() {
+      if (localStorage.toggled != "-nightmode" ) {
+          container.toggleClass("-nightmode", true );
+          localStorage.toggled = "-nightmode";
+          localStorage.button = "on";
+       } else {
+          container.toggleClass("-nightmode", false );
+          localStorage.toggled = "";
+          localStorage.button = "off"
+       }
+  })
+});
+</script>
+ <meta name="generator" content="Hugo 0.74.2" />
+        <link href="" rel="alternate" type="application/rss+xml" title="UVA Biocomplexity Institute" />
+        <link href="" rel="feed" type="application/rss+xml" title="UVA Biocomplexity Institute" />
+        
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" href="../img/favicon/safari-pinned-tab.svg" color="#000000">
+    <link rel="shortcut icon" href="../img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    
+    
+    <meta property="og:title" content="UVA Data Science for the Public Good Program">
+    <meta property="og:type" content="article">
+      
+      <meta name="twitter:card" content="summary">
+      <meta name="twitter:image" content="/favicon/uva-dspg-logo.jpg" >
+      
+    <meta property="description" content="">
+    <meta property="og:description" content="">
+    
+    <meta name="twitter:creator" content="">
+    <meta name="twitter:site" content="">
+    
+    </head>
+
+    
+    
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    
+
+    <body id = "bigbody">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand visible-xs" href="#">UVA Data Science for the Public Good Program</a>
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse">
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="../">Home</a></li>
+                            
+                                <li><a href="../overview/">Overview</a></li>
+                            
+                                <li><a href="../methods/">Data &amp; Methods</a></li>
+                            
+                                <li><a href="../findings/">Findings</a></li>
+                            
+                                <li><a href="../team/">Team</a></li>
+                            
+                                <li><a href="../team2/">Team2</a></li>
+                            
+                        </ul>
+                    
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="https://biocomplexity.virginia.edu/social-decision-analytics/dspg-program"><i class="fas fa-globe-americas"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://github.com/DSPG-Young-Scholars-Program"><i class="fab fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://twitter.com/UVA_BI"><i class="fab fa-twitter"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="mailto:kb7hp@virginia.edu"><i class="far fa-envelope"></i></a></li>
+                            
+                            
+                        </ul>
+                    
+                </div>
+            </div>
+        </nav>
+
+
+<main>
+
+    <div class="item">
+
+    
+    
+    
+
+    
+    
+      
+    
+
+    <h4><a href="../team2/">UVA Data Science for the Public Good Program</a></h4>
+    
+    <h5></h5>
+
+    
+    
+
+</div>
+
+
+    <br> <div class="text-justify">
+
+
+<p>The Data Science for the Public Good (DSPG) Young Scholars program](<a href="https://biocomplexity.virginia.edu/social-decision-analytics/dspg-program" class="uri">https://biocomplexity.virginia.edu/social-decision-analytics/dspg-program</a>) is a summer immersive program held at the <a href="https://biocomplexity.virginia.edu/social-decision-analytics">Biocomplexity Institute’s Social and Decision Analytics division (SDAD)</a>. In its seventh year, the program engages students from across the country to work together on projects that address state, federal, and local government challenges around critical social issues relevant in the world today. DSPG young scholars conduct research at the intersection of statistics, computation, and the social sciences to determine how information generated within every community can be leveraged to improve quality of life and inform public policy. For more information on program highlights, how to apply, and our annual symposium, please visit the official <a href="(https://biocomplexity.virginia.edu/social-decision-analytics/dspg-program)">Biocomplexity DSPG website</a>.</p>
+<div id="page-county-summer-project" class="section level3" style="text-align:center">
+<h3>2020 Page County Summer Project</h3>
+<div id="optional-general-description-of-your-project-team-members-and-how-they-complement-each-other." class="section level5" style="text-align:center">
+<h5>[Optional: General description of your project, team members, and how they complement each other.]</h5>
+</div>
+</div>
+<div id="dspg-team-members" class="section level3" style="text-align:center">
+<h3>DSPG Team Members</h3>
+<center>
+<p><img src="../Josh.Beverly.VT.jpg" alt="Josh Beverly" width="100" height="150" /> <img src="../images/Adam.Wells.VT.jpg" alt="Adam Wells" width="100" height="150" /> <img src="../images/Talib.Grant.VT.jpg" alt="Talib Grant" width="100" height="150" /> <img src="../images/Talib.Grant.VT.jpg" alt="Talib Grant" width="100" height="150" /></p>
+</center>
+<p>:-----------------------------------------:|:-----------------------------------------: <a href="https://github.com/jpbeverly">Josh Beverly, Fellow (PhD Student at Virginia Tech, Agricultural and Applied Economics)</a> | <a href="https://github.com/wellay01">Adam Wells, Intern (master student at Virginia Tech, Data Analysis and Applied Statistics)</a></p>
+<p><a href="https://github.com/jpbeverly">Josh Beverly, Fellow (PhD Student at Virginia Tech, Agricultural and Applied Economics)</a>, <a href="https://github.com/tkgrant">Talib Grant, Intern (Undergraduate Student at Virginia Tech, Data Analytics)</a>, <a href="https://github.com/lp9kh">Laura Pranteddu, Intern (Master Student at University of Trento, Data Science)</a>, and <a href="https://github.com/sp3sd">Afrina Tabassum, Intern (Virginia Tech, Mathematics)</a></p>
+</div>
+<div id="virginia-tech-faculty-team-members" class="section level3" style="text-align:center">
+<h3>Virginia Tech Faculty Team Members</h3>
+<div id="photos-go-about-here." class="section level5" style="text-align:center">
+<h5>[Photos go about here.]</h5>
+<p><a href="https://biocomplexity.virginia.edu/teja-pristavec">Susan Chen (Research Assistant Professor, DSPG Project Lead)</a>, <a href="https://biocomplexity.virginia.edu/brandon-kramer">Conaway Haskins (Postdocotral Research Associate)</a>, <a href="https://biocomplexity.virginia.edu/joshua-goldstein">Matt Holt (Research Assistant Professor)</a>, <a href="https://biocomplexity.virginia.edu/joy-tobin">Joy Tobin (Principal Scientist)</a>, and <a href="https://biocomplexity.virginia.edu/stephanie-shipp">Ford Ramsey (Deputy Division Director, Research Professor)</a></p>
+</div>
+</div>
+<div id="project-sponsorsstakeholders" class="section level3" style="text-align:center">
+<h3>Project Sponsors/Stakeholders</h3>
+<div id="photos-information-andor-links-about-your-sponsor-go-about-here.-you-may-want-to-use-materials-that-your-sponsors-have-already-shared-with-you-about-their-institution-or-coordinate-with-your-stakeholders-to-include-pertinent-information-here." class="section level5" style="text-align:center">
+<h5>[Photos, information, and/or links about your sponsor go about here. You may want to use materials that your sponsors have already shared with you about their institution or coordinate with your stakeholders to include pertinent information here.]</h5>
+</div>
+</div>
+<div id="acknowledgements" class="section level3" style="text-align:center">
+<h3>Acknowledgements</h3>
+<div id="optional-you-can-also-include-external-collaborators-in-this-section-or-a-separate-section." class="section level5" style="text-align:center">
+<h5>[Optional: You can also include external collaborators in this section or a separate section.]</h5>
+</div>
+</div>
+</div>
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+</main>
+
+        <footer id = "bigfooter">
+            <div style = "padding:15px;">
+                <p>Powered by <a href="https://gohugo.io">Hugo</a>. Themed by <a href="https://github.com/nathancday/min_night">min_night_dspg</a>. <a href="https://biocomplexity.virginia.edu/social-decision-analytics">Website by University of Virginia Biocomplexity Institute.</a>
+                </p>
+                <a rel="license" href="https://creativecommons.org/licenses/by/4.0/"
+                title="Creative Commons Attribution 4.0 International license">
+                <i class="fab fa-creative-commons" aria-hidden="true"></i> Attribution 4.0 International license
+                </a>
+            </div>
+        </footer>
+        
+        <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)};
+          gtag('js', new Date());
+          gtag('config', '');
+        </script>
+       
+    </body>
+
+</html>
+

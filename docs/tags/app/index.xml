@@ -16,7 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/findings/results-section-one/</guid>
-      <description>/* this chunnk of code centers all of the headings */ h1, h2, h3 { text-align: center; }  Examples Page If you want to add in an image on an Rmd file, use this link here. It ends up being a little tricky, but as long as you have created a folder to insert your images, you can just use some markdown code or html to insert images in the format you want.</description>
+      <description>/* this chunnk of code centers all of the headings */ h1, h2, h3 { text-align: center; }  Main Findings Dadashazar (2017) identified factors including previous incarceration, family relations, employment and education barriers, housing constraints and substance abuse to be associated with increased recidivism. Hanson (2017) concluded that prior criminal history and substance abuse were among the risk factors for multiple types of recidivism across multiple types of offenders.</description>
     </item>
     
   </channel>

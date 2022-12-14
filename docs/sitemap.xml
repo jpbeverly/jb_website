@@ -3,10 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/findings/general-overview/</loc>
-  </url>
-  
-  <url>
     <loc>/findings/results-section-one/</loc>
   </url>
   
@@ -19,7 +15,15 @@
   </url>
   
   <url>
-    <loc>/tags/app/</loc>
+    <loc>/findings/isochrones/hospitals__virginia_shp/read/</loc>
+  </url>
+  
+  <url>
+    <loc>/findings/isochrones/read/</loc>
+  </url>
+  
+  <url>
+    <loc>/findings/isochrones/virginiashapefiles/read/</loc>
   </url>
   
   <url>
@@ -27,7 +31,7 @@
   </url>
   
   <url>
-    <loc>/tags/collapsibletree/</loc>
+    <loc>/methods/</loc>
   </url>
   
   <url>
@@ -35,31 +39,15 @@
   </url>
   
   <url>
-    <loc>/tags/geospatial/</loc>
-  </url>
-  
-  <url>
-    <loc>/tags/networks/</loc>
-  </url>
-  
-  <url>
-    <loc>/methods/</loc>
-  </url>
-  
-  <url>
     <loc>/overview/</loc>
   </url>
   
   <url>
-    <loc>/team/</loc>
-  </url>
-  
-  <url>
-    <loc>/tags/r/</loc>
-  </url>
-  
-  <url>
     <loc>/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>/team/</loc>
   </url>
   
   <url>

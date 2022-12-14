@@ -1,27 +1,51 @@
 ---
-title: "Open Source Software 2020 Summer Project"
+title: "Data and Methodology"
 output: html_document
 ---
 
-```{css, echo=FALSE}
-/* this chunnk of code centers all of the headings */
-h1, h2, h3 {
-  text-align: center;
-}
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
 ```
 
-### Data and Methods
+### 2020 Page County Summer Project {style=text-align:center}
 
-Example text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in varius purus. Nullam ut sodales ante. Fusee justo nisi, suscipit a lacus et, posuere sagittis ex. Nulla convallis ante elit, at consequat ipsum ultricies ut. Aliquam erat volutpat. nderline. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in variu convallis ante elit, at consequat ipsum ultricies ut.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in varius purus. Nullam ut sodales ante. Fusee justo nisi, suscipit a lacus et, posuere sagittis ex. Nulla convallis ante elit, at consequat ipsum ultricies ut. Aliquam erat volutpat. nderline. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in variu convallis ante elit, at consequat ipsum ultricies ut.
+##Data Sources
+Gill et al (2016) note that increasing returns to assets held by the rural poor such as health and education fosters a pattern of growth and structural change in employment. Creating sustained growth in employment and labor income has been identified as a major driver of economic mobility (Inchauste et al., 2014). Increasing education, health, and employment have also been associated with decreasing incarceration and recidivism rates (Dadashazar, 2017).
+
+Therefore, to help reduce vulnerability in Page county we first began by accessing the health and education accessibility in Page County. We identified hospitals, clinics, counseling centers and education centers in the Page County region. The location data were taken from the VirginiaWorks website run by the Virginia Employment Commission (VEC) which is an agency of the Commonwealth of Virginia. VirginiaWorks is a collaboration of eight agencies on workforce needs in Virginia. VirginiaWorks aims to connect job seekers with employers in Virginia and therefore maintains a public database of employers for the whole state.
 
 <center>
-
-##### [Visualizations go about here.] 
-
+![Data](/images/VEC.png){width=350px height=200px}
+![Data](/images/careerWorks.png){width=300px height=250px}
 </center>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in varius purus. Nullam ut sodales ante. Fusee justo nisi, suscipit a lacus et, posuere sagittis ex. Nulla convallis ante elit, at consequat ipsum ultricies ut. Aliquam erat volutpat. nderline. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in variu convallis ante elit, at consequat ipsum ultricies ut.
+Unfortunately, recidivism data for levels below the state level are difficult to find given the sensitive nature of recidivism. Therefore, to identify areas potentially vulnerable to recidivism we pulled county-level data from the Virginia State Police Arrest records and incarceration rate data from the Vera Institute of Justice. We focused primarily on substance abuse arrests to include substance abuse as a factor in the analysis. We also performed a grant and program search to provide a list of potential resources to help the previously incarcerated population in Page County. 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in varius purus. Nullam ut sodales ante. Fusee justo nisi, suscipit a lacus et, posuere sagittis ex. Nulla convallis ante elit, at consequat ipsum ultricies ut. Aliquam erat volutpat. nderline. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in variu convallis ante elit, at consequat ipsum ultricies ut.
+<center>
+![Data](/images/police.jpg){width=150px height=150px}
+![Data](/images/Vera_Ver_Red.png){width=250px height=125px}
+</center>
+
+To further assess accessibility to health and education, we used (VEC) location data to create accessibility measures. We calculate the distances from each population-weighted county centroid to each education and health facility in a certain radius using OpenStreetMap data. This results in health and educational accessibility measures that provide information on the relative access to programs, health care and education in Virginia. These variables are also used in constructing the final vulnerability index explained below. We additionally mapped travel time isochrones to show relative accessibility to education and health centers as well. 
+
+<center>
+![Data](/images/OSM.jpg){width=300px height=150px}
+</center>
+
+Lastly, we constructed a composite vulnerability index using variables obtained from the spatial measures and the American Community Survey (ACS). The ACS is the largest survey administered by the U.S. Census Bureau and tracks many of the same variables as those tracked by the Census of the United States. We used factor analysis to create the composite index of vulnerability. The idea behind factor analysis is to explain unobservable factors affecting economic vulnerability (such as economic determinants, social determinants, and access) with variables that can be measured.  Variables in the analysis included demographic, socioeconomic, and access indices.
+
+<center>
+![Data](/images/ACS.jpg){width=250px height=150px}
+</center>
+
+References: 
+
+Dadashazar, N. (2017). Offender recidivism: A quantitative study of motivational risk factors and counseling.
+ 
+Gill, I. S., Revenga, A., & Zeballos, C. (2016). Grow, invest, insure: A game plan to end extreme poverty by 2030. The World Bank.
+
+Inchauste, G., Azevedo, J. P., Essama-Nssah, B., Olivieri, S., Nguyen, T. V., Saavedra-Chanduvi, J., & Winkler, H. (2014). Understanding changes in poverty. The World Bank.
+
+
+

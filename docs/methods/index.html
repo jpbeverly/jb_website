@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Open Source Software 2020 Summer Project</title>
+        <title>Data and Methodology</title>
         <link rel="canonical" href="../methods/">
         <style>
 
@@ -95,7 +95,7 @@ $(document).ready(function(){
   })
 });
 </script>
- <meta name="generator" content="Hugo 0.74.1" />
+ <meta name="generator" content="Hugo 0.74.2" />
         <link href="" rel="alternate" type="application/rss+xml" title="UVA Biocomplexity Institute" />
         <link href="" rel="feed" type="application/rss+xml" title="UVA Biocomplexity Institute" />
         
@@ -113,7 +113,7 @@ $(document).ready(function(){
     
     
     
-    <meta property="og:title" content="Open Source Software 2020 Summer Project">
+    <meta property="og:title" content="Data and Methodology">
     <meta property="og:type" content="article">
       
       <meta name="twitter:card" content="summary">
@@ -138,7 +138,7 @@ $(document).ready(function(){
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand visible-xs" href="#">Open Source Software 2020 Summer Project</a>
+                    <a class="navbar-brand visible-xs" href="#">Data and Methodology</a>
                     <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -193,7 +193,7 @@ $(document).ready(function(){
       
     
 
-    <h4><a href="../methods/">Open Source Software 2020 Summer Project</a></h4>
+    <h4><a href="../methods/">Data and Methodology</a></h4>
     
     <h5></h5>
 
@@ -206,23 +206,32 @@ $(document).ready(function(){
     <br> <div class="text-justify">
 
 
-<style type="text/css">
-/* this chunnk of code centers all of the headings */
-h1, h2, h3 {
-  text-align: center;
-}
-</style>
-<div id="data-and-methods" class="section level3">
-<h3>Data and Methods</h3>
-<p>Example text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in varius purus. Nullam ut sodales ante. Fusee justo nisi, suscipit a lacus et, posuere sagittis ex. Nulla convallis ante elit, at consequat ipsum ultricies ut. Aliquam erat volutpat. nderline. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in variu convallis ante elit, at consequat ipsum ultricies ut.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in varius purus. Nullam ut sodales ante. Fusee justo nisi, suscipit a lacus et, posuere sagittis ex. Nulla convallis ante elit, at consequat ipsum ultricies ut. Aliquam erat volutpat. nderline. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in variu convallis ante elit, at consequat ipsum ultricies ut.</p>
-<center>
-<div id="visualizations-go-about-here." class="section level5">
-<h5>[Visualizations go about here.]</h5>
-</center>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in varius purus. Nullam ut sodales ante. Fusee justo nisi, suscipit a lacus et, posuere sagittis ex. Nulla convallis ante elit, at consequat ipsum ultricies ut. Aliquam erat volutpat. nderline. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in variu convallis ante elit, at consequat ipsum ultricies ut.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in varius purus. Nullam ut sodales ante. Fusee justo nisi, suscipit a lacus et, posuere sagittis ex. Nulla convallis ante elit, at consequat ipsum ultricies ut. Aliquam erat volutpat. nderline. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in variu convallis ante elit, at consequat ipsum ultricies ut.</p>
+<div id="page-county-summer-project" class="section level3" style="text-align:center">
+<h3>2020 Page County Summer Project</h3>
 </div>
+<div id="data-sources" class="section level2">
+<h2>Data Sources</h2>
+<p>Gill et al (2016) note that increasing returns to assets held by the rural poor such as health and education fosters a pattern of growth and structural change in employment. Creating sustained growth in employment and labor income has been identified as a major driver of economic mobility (Inchauste et al., 2014). Increasing education, health, and employment have also been associated with decreasing incarceration and recidivism rates (Dadashazar, 2017).</p>
+<p>Therefore, to help reduce vulnerability in Page county we first began by accessing the health and education accessibility in Page County. We identified hospitals, clinics, counseling centers and education centers in the Page County region. The location data were taken from the VirginiaWorks website run by the Virginia Employment Commission (VEC) which is an agency of the Commonwealth of Virginia. VirginiaWorks is a collaboration of eight agencies on workforce needs in Virginia. VirginiaWorks aims to connect job seekers with employers in Virginia and therefore maintains a public database of employers for the whole state.</p>
+<center>
+<img src="../images/VEC.png" alt="Data" width="350" height="200" /> <img src="../images/careerWorks.png" alt="Data" width="300" height="250" />
+</center>
+<p>Unfortunately, recidivism data for levels below the state level are difficult to find given the sensitive nature of recidivism. Therefore, to identify areas potentially vulnerable to recidivism we pulled county-level data from the Virginia State Police Arrest records and incarceration rate data from the Vera Institute of Justice. We focused primarily on substance abuse arrests to include substance abuse as a factor in the analysis. We also performed a grant and program search to provide a list of potential resources to help the previously incarcerated population in Page County.</p>
+<center>
+<img src="../images/police.jpg" alt="Data" width="150" height="150" /> <img src="../images/Vera_Ver_Red.png" alt="Data" width="250" height="125" />
+</center>
+<p>To further assess accessibility to health and education, we used (VEC) location data to create accessibility measures. We calculate the distances from each population-weighted county centroid to each education and health facility in a certain radius using OpenStreetMap data. This results in health and educational accessibility measures that provide information on the relative access to programs, health care and education in Virginia. These variables are also used in constructing the final vulnerability index explained below. We additionally mapped travel time isochrones to show relative accessibility to education and health centers as well.</p>
+<center>
+<img src="../images/OSM.jpg" alt="Data" width="300" height="150" />
+</center>
+<p>Lastly, we constructed a composite vulnerability index using variables obtained from the spatial measures and the American Community Survey (ACS). The ACS is the largest survey administered by the U.S. Census Bureau and tracks many of the same variables as those tracked by the Census of the United States. We used factor analysis to create the composite index of vulnerability. The idea behind factor analysis is to explain unobservable factors affecting economic vulnerability (such as economic determinants, social determinants, and access) with variables that can be measured. Variables in the analysis included demographic, socioeconomic, and access indices.</p>
+<center>
+<img src="../images/ACS.jpg" alt="Data" width="250" height="150" />
+</center>
+<p>References:</p>
+<p>Dadashazar, N. (2017). Offender recidivism: A quantitative study of motivational risk factors and counseling.</p>
+<p>Gill, I. S., Revenga, A., &amp; Zeballos, C. (2016). Grow, invest, insure: A game plan to end extreme poverty by 2030. The World Bank.</p>
+<p>Inchauste, G., Azevedo, J. P., Essama-Nssah, B., Olivieri, S., Nguyen, T. V., Saavedra-Chanduvi, J., &amp; Winkler, H. (2014). Understanding changes in poverty. The World Bank.</p>
 </div>
 </div>
 
